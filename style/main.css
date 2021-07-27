@@ -1,0 +1,93 @@
+/*Declarção de variavel dentro do css. Porque é interessante usar isso? Como vamos reutilizar várias vezes em vários lugares, usamos a váriavel com as cores que escolhemos*/ 
+:root {
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+/* Renderiza todo o documento, necessário sempre utilizar no css */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+    background: var(--preta); /* Utilização da váriavel para colocar cor de fundo */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;    
+}
+
+header .container { /* maneira de alinhar os elementos em tela */
+    display:flex;
+    flex-direction: row;
+    align-items: center;/*alinhar os elementos do menu de navegação no centro */
+    justify-content: space-between; /*cria um espaço da primeira tag h2 e a tag nav */
+}
+
+header .logo {
+    margin-left: 5px; /*distanciar o logo NETFLIX da esquerda */
+    color: var(--vermelho); /* Utilização da váriavel para colocar cor no título NETFLIX */
+    font-family: Arial, Helvetica, sans-serif; /* fonte do título NETFLIX */
+    font-size: 40px; /*tamanho da fonte do título NETFLIX */
+}
+
+header nav a {
+    text-decoration: none; /*remoção do sublinhado embaixo do menu de navegação */
+    color: #AAA; /*cor do texto do menu de navegação */
+    margin-right: 10px; /* distanciamento da margem à direita */
+
+}
+
+header nav a:hover{
+    color: #fff; /*toda vez que o mouse estiver emcima dos menus de navegação, irá mudar para a cor que definimos, no caso #fff */
+}
+
+/* filme principal */
+.filme-principal{
+    font-size: 16px; /* fonte usada no texto da sinopse do filme */
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-um-contra-todos.jpg'); /*fundo com imagem*/
+    
+    height: 400px; /* tamanho da imagem de fundo*/
+    background-size: cover; /*tamanho da area de cobertura*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px; /* tamanho da fonte do título ( 1 Contra todos ) */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color:rgba(0,0,0,.50); /*color do botão com efeito de transparencia */
+    border: none; /* usamos o none para a retirada da borda do botão */
+    color: #fff; /*cor do texto do botão */
+
+    padding:15px 30px; /* o primeiro valor é referente para cima e para baixo; o segundo valor é para esquerda e direita.  ( Se passasemos quatro valores cada valor seria referente a um lado na ordem cima, direita, baixo, esquerda*/ 
+    margin-right: 15px;
+    font-size: 12px;
+    
+    cursor: pointer; /*ao colocar o ponteiro do mouse em cima do botão ele muda a forma de "seta" para a "maozinha" */   
+    transition: .3s ease all; /*tempo de animação de um botão para o outro */
+ }
+
+ .botao:hover {
+     background-color: rgb(255, 255, 255); /*ao passar o ponteiro do mouse emcima do botão o mesmo irá ficar com uma cor de fundo que determinamos, neste caso foi usado a cor white */
+     color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse emcima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */
+ }
+
+ .botao i {
+    margin-right: 8px; /*distanciamento do icone do batão */
+ }

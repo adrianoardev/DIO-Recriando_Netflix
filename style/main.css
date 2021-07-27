@@ -26,10 +26,10 @@ header .container { /* maneira de alinhar os elementos em tela */
 }
 
 header .logo {
-    margin-left: 5px; /*distanciar o logo NETFLIX da esquerda */
+    margin-left: 5px; /*distanciar o logo BRASILFLIX da esquerda */
     color: var(--vermelho); /* Utilização da váriavel para colocar cor no título NETFLIX */
     font-family: Arial, Helvetica, sans-serif; /* fonte do título NETFLIX */
-    font-size: 40px; /*tamanho da fonte do título NETFLIX */
+    font-size: 40px; /*tamanho da fonte do título BRASILFLIX*/
 }
 
 header nav a {
@@ -55,13 +55,11 @@ header nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-
 }
 
 .filme-principal .descricao {
     margin-top: 10px;
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px;    
 }
 
 .filme-principal .titulo{
@@ -84,10 +82,10 @@ header nav a:hover{
  }
 
  .botao:hover {
-     background-color: rgb(255, 255, 255); /*ao passar o ponteiro do mouse emcima do botão o mesmo irá ficar com uma cor de fundo que determinamos, neste caso foi usado a cor white */
-     color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse emcima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */
+     background-color: rgb(255, 255, 255); /*ao passar o ponteiro do mouse em cima do botão o mesmo irá ficar com uma cor de fundo que determinamos, neste caso foi usado a cor white */
+     color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse em cima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */
  }
 
  .botao i {
-    margin-right: 8px; /*distanciamento do icone do batão */
+    margin-right: 8px; /*distanciamento do icone do botão */
  }

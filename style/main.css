@@ -13,12 +13,12 @@
 
 /* elementos base */
 body {
-    background: var(--preta); /* Utilização da váriavel para colocar cor de fundo */
-    font-family: 'Times New Roman', Times, serif;
+    background: var(--preta); /*Utilização da váriavel para colocar cor de fundo*/
+    font-family: 'Arial', Times, serif;
     color: white;    
 }
 
-header .container { /* maneira de alinhar os elementos em tela */
+header .container { /*maneira de alinhar os elementos em tela*/
     display:flex;
     flex-direction: row;
     align-items: center;/*alinhar os elementos do menu de navegação no centro */
@@ -27,65 +27,87 @@ header .container { /* maneira de alinhar os elementos em tela */
 
 header .logo {
     margin-left: 5px; /*distanciar o logo BRASILFLIX da esquerda */
-    color: var(--vermelho); /* Utilização da váriavel para colocar cor no título NETFLIX */
-    font-family: Arial, Helvetica, sans-serif; /* fonte do título NETFLIX */
+    color: var(--vermelho); /*Utilização da váriavel para colocar cor no título BRASILFLIX*/
+    font-family: Arial, Helvetica, sans-serif; /*fonte do título BRASILFLIX */
     font-size: 40px; /*tamanho da fonte do título BRASILFLIX*/
 }
 
 header nav a {
-    text-decoration: none; /*remoção do sublinhado embaixo do menu de navegação */
-    color: #AAA; /*cor do texto do menu de navegação */
-    margin-right: 10px; /* distanciamento da margem à direita */
+    text-decoration: none; /*remoção do sublinhado embaixo do menu de navegação*/
+    color: #AAA; /*cor do texto do menu de navegação*/
+    margin-right: 10px; /*distanciamento da margem à direita*/
 
 }
 
-header nav a:hover{
+header nav a:hover {
     color: #fff; /*toda vez que o mouse estiver emcima dos menus de navegação, irá mudar para a cor que definimos, no caso #fff */
 }
 
 /* filme principal */
-.filme-principal{
-    font-size: 16px; /* fonte usada no texto da sinopse do filme */
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-um-contra-todos.jpg'); /*fundo com imagem*/
+.filme-principal {
+    font-size: 16px; /*fonte usada no texto da sinopse do filme*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/capa-um-contra-todos.jpg'); /*linear gradiante para criar um gradiente de cores no fundo da imagem da série principal*/
     
-    height: 400px; /* tamanho da imagem de fundo*/
+    height: 400px; /*tamanho da imagem da série principal*/
     background-size: cover; /*tamanho da area de cobertura*/
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: flex; /*coloca os elementos ( botões do menu ) em linha*/
+    flex-direction: column; /*coloca os botões elementos ( botões do menu ) na horizontal*/
+    justify-content: center; /*coloca os elementos centralizados*/
+    align-items: flex-start; /*coloca os elementos alinhados da esquerda pra direita*/
 }
 
 .filme-principal .descricao {
-    margin-top: 10px;
-    margin-bottom: 40px;    
+    margin-top: 10px; /*espaçamento da descrição*/
+    margin-bottom: 40px;     
 }
 
-.filme-principal .titulo{
-    margin-top: 15%;
-    font-size: 40px; /* tamanho da fonte do título ( 1 Contra todos ) */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.filme-principal .titulo {
+    margin-top: 15%; /*posicionamento dos elementos em tela*/
+    font-size: 40px; /*tamanho da fonte do título principal ( 1 Contra todos )*/
+    font-family: 'Trebuchet MS', Arial, sans-serif; /*fonte utilizada na sinopse*/
 }
 
+/*configuração do botão*/
 .botao {
-    background-color:rgba(0,0,0,.50); /*color do botão com efeito de transparencia */
-    border: none; /* usamos o none para a retirada da borda do botão */
-    color: #fff; /*cor do texto do botão */
+    background-color:rgba(0,0,0,.50); /*cor do botão com efeito de transparencia*/
+    border: none; /* usamos o none para a retirada da borda do botão*/
+    color: white; /*cor do texto do botão*/
 
-    padding:15px 30px; /* o primeiro valor é referente para cima e para baixo; o segundo valor é para esquerda e direita.  ( Se passasemos quatro valores cada valor seria referente a um lado na ordem cima, direita, baixo, esquerda*/ 
-    margin-right: 15px;
-    font-size: 12px;
+    padding:15px 30px; /* o primeiro valor é referente para cima e para baixo; o segundo valor é para esquerda e direita.  (Se passasemos quatro valores cada valor seria referente a um lado na ordem cima, direita, baixo, esquerda)*/ 
+
+    margin-right: 15px; /*espaçamento entre os botões */
+    font-size: 12px; /*tamanho de fonte usado no botão */
     
     cursor: pointer; /*ao colocar o ponteiro do mouse em cima do botão ele muda a forma de "seta" para a "maozinha" */   
-    transition: .3s ease all; /*tempo de animação de um botão para o outro */
+    transition: .3s ease all; /*tempo de animação de um botão para o outro e efeito*/
  }
 
  .botao:hover {
-     background-color: rgb(255, 255, 255); /*ao passar o ponteiro do mouse em cima do botão o mesmo irá ficar com uma cor de fundo que determinamos, neste caso foi usado a cor white */
-     color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse em cima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */
+    background-color: rgb(255, 255, 255); /*ao passar o ponteiro do mouse em cima do botão o mesmo irá ficar com uma cor de fundo que determinamos, neste caso foi usado a cor white*/
+
+    color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse em cima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */
  }
 
  .botao i {
-    margin-right: 8px; /*distanciamento do icone do botão */
+    margin-right: 8px; /*espaçamento entre o nome e ícone dentro do botão de menu */
+ }
+
+ .container {
+    margin-left: 20px; /*move todos elementos do container para a esquerda*/
+ }
+ 
+ /*alteração do container dentro de filme-principla*/
+ .filme-principal .container {
+     width: 70%; /*limitação de largura do texto, fazendo com que quando diminua a tela ele se ajusta ao tamanho definido*/
+ }
+
+ .box-filme {
+     height: 100%;
+     width: 100%;
+     display: block;
+ }
+
+ .carrosel-filmes {
+     margin-top: 5px;
  }

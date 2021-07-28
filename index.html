@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style/main.css">
+
+    <!--responsividade-->
+
+    <link rel="stylesheet" href="style/responsive.css">
+
+
+
+
+    <!--owl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>BRASILFLIX</title>
 </head>
 <body>    
@@ -29,21 +41,68 @@
             <div class="container">
                 <h3 class="titulo">1 CONTRA TODOS</h3>
                 <p class="descricao">Cadu é um advogado dedicado que preza pela verdade e pela justiça acima de tudo. Com uma esposa grávida do seu segundo filho e recentemente desempregado, ele vê sua vida mudar completamente quando é acusado e condenado à prisão após ser confundido com o maior traficante de drogas do Brasil.</p>
+
                 <div class="botoes">
-                    <button role="button" class="botao"> 
+
+                    <button role="button" class="botao"> <!--utilizamos a função role para dizer qual a função daquele botão -->
                         <i class="fas fa-play"></i> <!--cópia de html do site fontawesome para podermos inserir um icone no menu de botão-->
                         ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao">
+                    </button> 
+
+                    <button role="button" class="botao"> <!--utilizamos a função role para dizer qual a função daquele botão -->
                         <i class="fas fa-info-circle"></i> <!--cópia de html do site fontawesome para podermos inserir um icone no menu de botão-->
                         MAIS INFORMAÇÕES
                     </button>
+
                 </div>
             </div>                
         </div>        
-    </main>        
+    </main>      
+    
+    <!--contrução do carrosel-filmes-->
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini11.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/358b1c09fc.js" crossorigin="anonymous"></script> <!--link externo para podermos utilizar icones-->
-    
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+
 </body>
 </html>

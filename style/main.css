@@ -86,7 +86,7 @@ header nav a:hover {
  .botao:hover {
     background-color: rgb(255, 255, 255); /*ao passar o ponteiro do mouse em cima do botão o mesmo irá ficar com uma cor de fundo que determinamos, neste caso foi usado a cor white*/
 
-    color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse em cima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */
+    color: rgb(0, 0, 0); /* ao passar o ponteiro do mouse em cima do botão o texto do botão irá mudar de cor, neste caso foi usado o black */    
  }
 
  .botao i {
@@ -112,3 +112,13 @@ header nav a:hover {
      margin-top: 5px;
  }
 
+ .link {    
+    background-color:rgba(0,0,0,.50); /*cor do botão com efeito de transparencia*/    
+    color: white; /*cor do texto do botão*/
+    text-decoration: none;     
+ }
+ .link:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+ }
+ 
